@@ -80,10 +80,12 @@ h1 {
     box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
     border-radius: 30px;
     overflow: hidden;
+    position: relative;
 }
 
 .circle{
     background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%);
     cursor: pointer;
     border-radius: 50%;
+    position: absolute;
 }
