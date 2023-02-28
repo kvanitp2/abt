@@ -34,7 +34,7 @@ function setTime(value) {
 
 function decreaseTime() {
     if (time === 0) {
-        console.log('Game over')
+        gameOver()
     }
     else {
         let current = --time
@@ -44,6 +44,10 @@ function decreaseTime() {
         setTime(current)
     }
 }
+function gameOver(){
+    timeEl.parentElement.classList.add('hide')
+}
+
 function startGame() {
     setInterval(decreaseTime, 1000)
     createRandomCircle()
